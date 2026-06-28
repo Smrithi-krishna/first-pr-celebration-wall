@@ -1,0 +1,224 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>First PR Celebration Wall</title>
+    <meta
+      name="description"
+      content="A wall celebrating first-time open source contributors. Fork, edit, PR, and get featured."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@500;700&family=Space+Grotesk:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="bg-grid"></div>
+    <div class="bg-glow glow-1"></div>
+    <div class="bg-glow glow-2"></div>
+
+    <nav class="nav glass">
+      <div class="logo">
+        <span class="logo-mark">{ }</span>
+        <span>First PR Wall</span>
+      </div>
+      <div class="nav-links">
+        <a href="#how">How it works</a>
+        <a href="#wall">Wall</a>
+        <a href="#contribute" class="btn btn-ghost">Contribute</a>
+      </div>
+    </nav>
+
+    <!-- HERO -->
+    <header class="hero">
+      <div class="badge-pill">
+        <span class="dot"></span> Live · GitHub Webinar Activity
+      </div>
+      <h1 class="hero-title">
+        Your <span class="gradient-text">First Pull Request</span><br />
+        deserves a celebration.
+      </h1>
+      <p class="hero-sub">
+        Fork the repo, add your name, open a PR — and watch your contribution
+        land on the wall in real time. The open-source journey starts with one
+        commit.
+      </p>
+      <div class="hero-cta">
+        <a href="#contribute" class="btn btn-primary">Make my first PR →</a>
+        <button class="btn btn-ghost" id="copyLinkedinHero">
+          Copy LinkedIn post
+        </button>
+      </div>
+      <div class="hero-stats glass">
+        <div class="stat">
+          <div class="stat-num" id="contribCount">0</div>
+          <div class="stat-label">Contributors</div>
+        </div>
+        <div class="divider"></div>
+        <div class="stat">
+          <div class="stat-num"><span id="prCount">0</span>+</div>
+          <div class="stat-label">First PRs merged</div>
+        </div>
+        <div class="divider"></div>
+        <div class="stat">
+          <div class="stat-num">∞</div>
+          <div class="stat-label">Possibilities</div>
+        </div>
+      </div>
+    </header>
+
+    <!-- HOW IT WORKS -->
+    <section id="how" class="section">
+      <div class="section-head">
+        <span class="eyebrow">/ workflow</span>
+        <h2 class="section-title">How it works</h2>
+        <p class="section-sub">
+          Four steps. Zero gatekeeping. Welcome to open source.
+        </p>
+      </div>
+      <div class="steps">
+        <div class="step glass">
+          <div class="step-num">01</div>
+          <h3>Fork the repo</h3>
+          <p>
+            Click <code>Fork</code> on GitHub to create your own copy of the
+            project under your account.
+          </p>
+        </div>
+        <div class="step glass">
+          <div class="step-num">02</div>
+          <h3>Clone & edit</h3>
+          <p>
+            <code>git clone</code> your fork, then add yourself to
+            <code>contributors.json</code> or the wall file.
+          </p>
+        </div>
+        <div class="step glass">
+          <div class="step-num">03</div>
+          <h3>Commit & push</h3>
+          <p>
+            Stage your change, write a meaningful commit, and push it to a new
+            branch on your fork.
+          </p>
+        </div>
+        <div class="step glass">
+          <div class="step-num">04</div>
+          <h3>Open a Pull Request</h3>
+          <p>
+            Open a PR back to the main repo. Once merged, your card appears on
+            the wall ✨
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <div class="search-box">
+      <input type="text" id="searchInput" placeholder="Search your name..." />
+    </div>
+
+    <!-- CELEBRATION WALL -->
+    <section id="wall" class="section">
+      <div class="section-head">
+        <span class="eyebrow">/ celebration wall</span>
+        <h2 class="section-title">
+          The <span class="gradient-text">First-PR</span> wall
+        </h2>
+        <p class="section-sub">
+          Every card here belongs to someone who just shipped their very first
+          open-source contribution.
+        </p>
+      </div>
+
+      <!-- SAMPLE CARD (students can copy and edit this) -->
+      <div class="wall" id="wall">
+        <div class="card">
+          <div class="card-head">
+            <div class="avatar">SK</div>
+            <div class="card-name">Smrithi Krishna</div>
+          </div>
+
+          <p class="card-msg">All the best for every contributors</p>
+
+          <span class="first-pr-badge">★ FIRST PR</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTRIBUTE -->
+    <section id="contribute" class="section">
+      <section id="contribute" class="section">
+        <div class="cta-card glass">
+          <h2>Ready to make your first PR?</h2>
+
+          <p>
+            This is a beginner-friendly open source activity. Fork the repo,
+            follow the steps, and open your first Pull Request.
+          </p>
+
+          <div class="cta-row">
+            <a
+              class="btn btn-primary"
+              href="https://github.com"
+              target="_blank"
+              rel="noopener"
+            >
+              🚀 Start Contributing
+            </a>
+
+            <a
+              class="btn btn-ghost"
+              href="https://github.com"
+              target="_blank"
+              rel="noopener"
+            >
+              ⭐ Star the Repo
+            </a>
+          </div>
+        </div>
+      </section>
+    </section>
+
+    <footer class="footer">
+      <p>
+        Built with ♥ for first-time contributors ·
+        <a href="https://github.com" target="_blank" rel="noopener">GitHub</a>
+      </p>
+
+      <div class="footer-contact">
+        <p>📩 Contact: Smrithi Krishna</p>
+        <p>
+          🔗 LinkedIn:
+          <a href="https://www.linkedin.com/in/smrithi-krishna" target="_blank">
+            linkedin.com/in/smrithi-krishna
+          </a>
+        </p>
+        <p>🚀 First PR Webinar Project</p>
+      </div>
+    </footer>
+
+    <!-- POPUP -->
+    <div class="modal-backdrop" id="modal">
+      <div class="modal glass">
+        <div class="confetti" id="confetti"></div>
+        <h2>🎉 You're on the wall!</h2>
+        <p id="modalMsg">
+          Welcome to open source. Share the moment with your network.
+        </p>
+        <div class="modal-actions">
+          <button class="btn btn-primary" id="shareLinkedin">
+            Copy LinkedIn post
+          </button>
+          <button class="btn btn-ghost" id="closeModal">Close</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="toast" id="toast"></div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
